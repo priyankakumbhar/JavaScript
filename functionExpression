@@ -1,0 +1,17 @@
+//function Expession
+let whatDoYouDo=function(job,firstName){
+   switch(job)
+    {
+    case 'teacher':
+        return firstName+ ' teaches kids how to code';
+    case 'driver':
+        return firstName+' drives a can in uber';
+    case 'designer':
+        return firstName+' designs beautiful website';
+    default:
+        return firstName+' does something else';
+    }   
+}
+console.log(whatDoYouDo('teacher','John'));
+console.log(whatDoYouDo('designer','Minal'));
+console.log(whatDoYouDo('retired','pratik'));
