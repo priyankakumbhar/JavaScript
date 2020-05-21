@@ -1,0 +1,13 @@
+let value=10;
+function display()
+    {
+        let value=15;       //local variable
+        alert(value);       //print 15
+    }
+
+function display1()
+{
+    Window.value=100;      //declare global variable
+    alert(Window.value);   //print 100
+    alert(value);          //print 10
+}
