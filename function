@@ -1,0 +1,30 @@
+function calculateAge(birthYear)    //function declaration
+{
+     return 2018-birthYear;
+}
+
+// function call
+let ageJohn=calculateAge(1998);
+let ageSmith=calculateAge(1970);
+let ageMike=calculateAge(1986);
+console.log(ageJohn,ageSmith,ageMike);
+
+//function can call another function
+function yearsUntilRetirement(year,firstName)
+{
+    let age=calculateAge(year);
+    let retirement=65-age;
+
+    if(retirement>0)
+    {
+        console.log(firstName+' retires in '+retirement+' years');
+    }
+    else{
+        console.log(firstName+'is already retired');
+    }
+    
+}
+// function calling
+yearsUntilRetirement(1998,'john');
+yearsUntilRetirement(1948,'mike');
+yearsUntilRetirement(2000,'Smith');
