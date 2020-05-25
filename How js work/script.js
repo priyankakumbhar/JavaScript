@@ -1,18 +1,18 @@
-//Hoisting 
+//Hoisting work only funcion declaration
 
-//work only funcion declaration
-/*calculateAge(1995);
+calculateAge(1995);         //work
 function calculateAge(year)
 {
     console.log(2020-year);
-}*/
+}
+calculateAge(1995);
 
-//calculateAge(1995);
 /**
  * 
- * function Expression Hoisting 
+ * Hoisting will not work with function Expression 
  */
- //retirement(1965);-----not work
+ 
+//retirement(1965);-----not work
 
 var retirement=function (year)
 {
@@ -20,8 +20,6 @@ var retirement=function (year)
     
 }
 retirement(1970);
-
-
 
 
 /******
@@ -46,7 +44,7 @@ console.log(age);//print 22
  * ScopeChain
  * exical scoping ---child has access of variable and function of parent and global variable and function
  */
-/*let a="Hi";
+let a="Hi";
 first();
 
 function first()
@@ -58,7 +56,7 @@ function first()
             let c="hey";
             console.log(a+' '+b+' '+c);
         }
-} */
+} 
 //---------------------
 let a1="hello";
 first();
@@ -102,8 +100,8 @@ let john={
 
     /*function innerFunction()
     {
-        console.log(this);
-    }
+        console.log(this);              print default object that is windows object
+    } 
     innerFunction();*/
     }
 }
@@ -114,6 +112,6 @@ let mike={
     firstName:'mike',
     birthYear:1995
 }
-//method borrow
+//method borrow from john object
 mike.calculateAge=john.calculateAge;
 mike.calculateAge();
