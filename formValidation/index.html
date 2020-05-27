@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="formvalidation.js"></script>
+</head>
+<body>
+    <p>Password Validation</p>
+    <div>
+        <form name="f1">
+           Name: <input type="text" name="name" id="p1" required>
+           PassWord: <input type="text" name="name" id="p2" required>
+           <input type="submit" value="Submit" onclick=" validatePassword()">
+           <div id="msg"></div>
+        </form>
+    </div><br>
+    <div>
+        <form action="">
+           Name: <input type="text" name="name" id="p1">
+           Password: <input type="text" name="name" id="p2">
+           Retype Password: <input type="text" name="name" id="p3">
+           <div id="retype"></div>
+           <input type="submit" value="Submit" onclick="confirmPassword()">
+        </form>
+    </div><br>
+
+    <div>
+        Enter Number:<input type="text" name="name" id="num">
+        <div id="check"></div>
+        <input type="button" name="btn" id="btn" value="click "onclick="return checkNumber()">
+    </div>
+
+    <div>
+        Enter Email:<input type="text" name="email" id="email">
+        <input type="button" name="btn" id="btn1" value="click " onclick="return emailValidation()">
+    </div>
+
+</body>
+</html>
